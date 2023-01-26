@@ -9,7 +9,7 @@
           "name": "EventReporterService",
           "type": "X64",
           "version": "1.0.0.Release",
-          "summary": "事件报告组件",
+          "summary": "Event reporting component",
           "homepage": "https://gitee.com/jidcoo/dui-server-engine/tree/dev/KService/EventReporterService",
           "author": "Jidcoo",
           "location": "https://gitee.com/jidcoo/service-meta/raw/master/meta/pack/EventReporterService/EventReporterService-X64-1.0.0.Release-vB8BiEPZgixrYfUE.pk",
