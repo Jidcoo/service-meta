@@ -1,76 +1,20 @@
 {
   "name": "ServiceInstaller",
-  "remote": "http://127.0.0.1:8790/SMVue/meta/meta.json",
-  "last_modified": 1674448141273,
+  "remote": "https://gitee.com/jidcoo/service-meta/raw/master/meta/meta.json",
+  "last_modified": 1674733988927,
   "meta": {
-    "VMService": {
-      "services": [
-        {
-          "name": "VMService",
-          "type": "X64",
-          "version": "1.0.0.Release",
-          "summary": "JVM虚拟机组件",
-          "homepage": "unknown",
-          "author": "Jidcoo",
-          "location": "http://127.0.0.1:8790/SMVue/meta/pack/1674388344919.pk",
-          "enable": true,
-          "autostart": true,
-          "service": "VMService.dll",
-          "requires": []
-        }
-      ]
-    },
-    "DBService": {
-      "services": [
-        {
-          "name": "DBService",
-          "type": "X64",
-          "version": "1.0.0.Release",
-          "summary": "数据库支持组件[MySQL]",
-          "homepage": "unknown",
-          "author": "Jidcoo",
-          "location": "http://127.0.0.1:8790/SMVue/meta/pack/1674436549290.pk",
-          "enable": true,
-          "autostart": false,
-          "service": "DBService.dll",
-          "requires": [
-            "VMService-X64-1.0.0.Release"
-          ]
-        }
-      ]
-    },
-    "ERPService": {
-      "services": [
-        {
-          "name": "ERPService",
-          "type": "X64",
-          "version": "1.0.0.Release",
-          "summary": "ERP-Web服务组件",
-          "homepage": "unknown",
-          "author": "Jidcoo",
-          "location": "http://127.0.0.1:8790/SMVue/meta/pack/1674437480372.pk",
-          "enable": true,
-          "autostart": true,
-          "service": "ERPService.dll",
-          "requires": [
-            "VMService-X64-1.0.0.Release",
-            "DBService-X64-1.0.0.Release"
-          ]
-        }
-      ]
-    },
     "EventReporterService": {
       "services": [
         {
           "name": "EventReporterService",
           "type": "X64",
           "version": "1.0.0.Release",
-          "summary": "事件报告组件",
-          "homepage": "unknown",
+          "summary": "浜嬩欢鎶ュ憡缁勪欢",
+          "homepage": "https://gitee.com/jidcoo/dui-server-engine/tree/dev/KService/EventReporterService",
           "author": "Jidcoo",
-          "location": "http://127.0.0.1:8790/SMVue/meta/pack/1674372457839.pk",
+          "location": "https://gitee.com/jidcoo/service-meta/raw/master/meta/pack/EventReporterService/EventReporterService-X64-1.0.0.Release-vB8BiEPZgixrYfUE.pk",
           "enable": true,
-          "autostart": false,
+          "autostart": true,
           "service": "EventReporterService.dll",
           "requires": []
         }
