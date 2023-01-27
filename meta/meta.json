@@ -1,7 +1,7 @@
 {
   "name": "ServiceInstaller",
   "remote": "https://gitee.com/jidcoo/service-meta/raw/master/meta/meta.json",
-  "last_modified": 1674834015288,
+  "last_modified": 1674834417086,
   "meta": {
     "EventReporterService": {
       "services": [
@@ -50,6 +50,25 @@
           "enable": true,
           "autostart": true,
           "service": "HotExecutorService.dll",
+          "requires": [
+            "VMService-X64-1.0.0.Release"
+          ]
+        }
+      ]
+    },
+    "DBService": {
+      "services": [
+        {
+          "name": "DBService",
+          "type": "X64",
+          "version": "1.0.0.Release",
+          "summary": "DataBase component ",
+          "homepage": "https://gitee.com/jidcoo/dui-server-engine/tree/dev/KService/DBService",
+          "author": "Jidcoo",
+          "location": "https://gitee.com/jidcoo/service-meta/raw/master/meta/pack/DBService/DBService-X64-1.0.0.Release-C5waRgbRMNc71AbQ.pk",
+          "enable": true,
+          "autostart": false,
+          "service": "DBService.dll",
           "requires": [
             "VMService-X64-1.0.0.Release"
           ]
