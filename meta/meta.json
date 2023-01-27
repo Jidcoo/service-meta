@@ -1,7 +1,7 @@
 {
   "name": "ServiceInstaller",
   "remote": "https://gitee.com/jidcoo/service-meta/raw/master/meta/meta.json",
-  "last_modified": 1674733988927,
+  "last_modified": 1674832751833,
   "meta": {
     "EventReporterService": {
       "services": [
@@ -19,7 +19,23 @@
           "requires": []
         }
       ]
+    },
+    "VMService": {
+      "services": [
+        {
+          "name": "VMService",
+          "type": "X64",
+          "version": "1.0.0.Release",
+          "summary": "VM[JVM] component",
+          "homepage": "https://gitee.com/jidcoo/dui-server-engine/tree/dev/KService/VMService",
+          "author": "Jidcoo",
+          "location": "https://gitee.com/jidcoo/service-meta/raw/master/meta/pack/VMService/VMService-X64-1.0.0.Release-FCr85ZhIj9uDx2KJ.pk",
+          "enable": true,
+          "autostart": false,
+          "service": "VMService.dll",
+          "requires": []
+        }
+      ]
     }
   }
 }
-
