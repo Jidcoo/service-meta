@@ -1,7 +1,7 @@
 {
   "name": "ServiceInstaller",
   "remote": "https://gitee.com/jidcoo/service-meta/raw/master/meta/meta.json",
-  "last_modified": 1674834417086,
+  "last_modified": 1674835381710,
   "meta": {
     "EventReporterService": {
       "services": [
@@ -71,6 +71,28 @@
           "service": "DBService.dll",
           "requires": [
             "VMService-X64-1.0.0.Release"
+          ]
+        }
+      ]
+    },
+    "ERPService": {
+      "services": [
+        {
+          "name": "ERPService",
+          "type": "X64",
+          "version": "1.0.0.Release",
+          "summary": "ERP Web supported component",
+          "homepage": "https://gitee.com/jidcoo/dui-server-engine/tree/dev/KService/ERPService",
+          "author": "Jidcoo",
+          "location": "https://gitee.com/jidcoo/service-meta/raw/master/meta/pack/ERPService/ERPService-X64-1.0.0.Release-j0ZIQRoO2onYEvl9.pk",
+          "enable": true,
+          "autostart": true,
+          "service": "ERPService.dll",
+          "requires": [
+            "DBService-X64-1.0.0.Release",
+            "VMService-X64-1.0.0.Release",
+            "EventReporterService-X64-1.0.0.Release",
+            "HotExecutorService-X64-1.0.0.Release"
           ]
         }
       ]
