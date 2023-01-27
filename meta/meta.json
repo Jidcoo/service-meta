@@ -1,7 +1,7 @@
 {
   "name": "ServiceInstaller",
   "remote": "https://gitee.com/jidcoo/service-meta/raw/master/meta/meta.json",
-  "last_modified": 1674832751833,
+  "last_modified": 1674834015288,
   "meta": {
     "EventReporterService": {
       "services": [
@@ -34,6 +34,25 @@
           "autostart": false,
           "service": "VMService.dll",
           "requires": []
+        }
+      ]
+    },
+    "HotExecutorService": {
+      "services": [
+        {
+          "name": "HotExecutorService",
+          "type": "X64",
+          "version": "1.0.0.Release",
+          "summary": "Dynamic execution supported component",
+          "homepage": "https://gitee.com/jidcoo/dui-server-engine/tree/dev/KService/HotExecutorService",
+          "author": "Jidcoo",
+          "location": "https://gitee.com/jidcoo/service-meta/raw/master/meta/pack/HotExecutorService/HotExecutorService-X64-1.0.0.Release-CrlNUhMuLMwYDUO8.pk",
+          "enable": true,
+          "autostart": true,
+          "service": "HotExecutorService.dll",
+          "requires": [
+            "VMService-X64-1.0.0.Release"
+          ]
         }
       ]
     }
